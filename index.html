@@ -224,6 +224,8 @@
   .proj-top{display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:16px;}
   .proj-icon{width:40px; height:40px; border-radius:10px; background:var(--red-100); color:var(--red-600); display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-weight:600;}
   .proj-links{display:flex; gap:8px;}
+  .proj-card.proj-feature{grid-column:1 / -1;}
+  .proj-shot{display:block; width:100%; height:auto; border-radius:10px; border:1px solid var(--border); margin:2px 0 16px;}
   .proj-link{width:34px; height:34px; border-radius:50%; border:1px solid var(--border); display:flex; align-items:center; justify-content:center; transition:.3s ease;}
   .proj-link:hover{background:var(--red-500); border-color:var(--red-500);}
   .proj-link:hover svg{stroke:#fff;}
@@ -486,6 +488,17 @@
       </div>
       <div class="proj-grid reveal-stagger">
 
+        <div class="proj-card proj-feature">
+          <div class="proj-top">
+            <div class="proj-icon">ID</div>
+            <div class="proj-links"><a class="proj-link" href="https://github.com/praharshitha-ai/idsp-disease-surveillance" target="_blank" rel="noopener" aria-label="IDSP project code on GitHub" title="IDSP project code on GitHub"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></div>
+          </div>
+          <h3>Forecastability of India's Disease Surveillance Data — Telemedicon 2026</h3>
+          <img class="proj-shot" src="idsp-dashboard.jpg" width="1200" height="750" loading="lazy" alt="IDSP surveillance dashboard showing reported Acute Diarrheal Disease cases by state across India">
+          <p>Abstract with Renuka Prasanthi Dandi, submitted to Telemedicon 2026, Jaipur. Compared Prophet, SARIMA and linear models on 44,952 IDSP outbreak records: median forecast error rose from 77% nationally to 105% at district level, and a linear trend was never beaten. Built a React and D3 dashboard of 16 diseases across states and districts.</p>
+          <div class="proj-tags"><span class="tag">Forecasting</span><span class="tag">Public Health</span><span class="tag">React + D3</span></div>
+        </div>
+
         <div class="proj-card">
           <div class="proj-top">
             <div class="proj-icon">S</div>
@@ -541,15 +554,6 @@
           <h3>Echo Lens</h3>
           <p>Designed an AI-assisted echocardiogram reporting workflow to help streamline documentation and reduce reporting turnaround time.</p>
           <div class="proj-tags"><span class="tag">AI in Healthcare</span><span class="tag">UX Research</span></div>
-        </div>
-
-        <div class="proj-card">
-          <div class="proj-top">
-            <div class="proj-icon">P</div>
-          </div>
-          <h3>Stock Price Forecasting</h3>
-          <p>Developed time-series forecasting models using Prophet to predict short-term stock price movement trends.</p>
-          <div class="proj-tags"><span class="tag">Python</span><span class="tag">Prophet</span><span class="tag">Time Series</span></div>
         </div>
 
         <div class="proj-card">
